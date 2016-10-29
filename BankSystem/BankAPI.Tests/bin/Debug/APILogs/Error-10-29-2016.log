@@ -1,0 +1,1009 @@
+[2016/10/29 19:02:34 Error] System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 164
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 19:03:25 Error] System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 164
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 19:10:38 Error] System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 164
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 0
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 0
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 49
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:37 Error] System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:59 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:59 Error] System.InvalidOperationException: Connection was closed, statement was terminated
+   at System.Data.SQLite.SQLiteDataReader.CheckClosed()
+   at System.Data.SQLite.SQLiteDataReader.get_FieldCount()
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataRecord.ReadMetadata(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader)
+   at System.Data.Entity.Core.Objects.Internal.ShapedBufferedDataRecord.Initialize(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataReader.Initialize(String providerManifestToken, DbProviderServices providerServices, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:59 Error] System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\UnitOfWork.cs:line 25
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 192
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:12:59 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:12:59 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:15:30 Error] System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_ObjectQueryProvider()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:15:30 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 184
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:15:30 Error] System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntityEntryToDictionary(EntityEntry entry, EntityState state)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:15:31 Error] System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\UnitOfWork.cs:line 25
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 192
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:15:31 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 184
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:15:31 Error] System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\UnitOfWork.cs:line 25
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 192
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:17:41 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 21:17:41 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:17:41 Error] System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\UnitOfWork.cs:line 25
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 170
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 21:18:18 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 21:18:18 Error] System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Data.SQLite.SQLiteDataReader.Read()
+   at System.Data.Entity.Core.Objects.Internal.ShapedBufferedDataRecord.Initialize(DbDataReader reader, DbSpatialDataReader spatialDataReader, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.ShapedBufferedDataRecord.Initialize(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataReader.Initialize(String providerManifestToken, DbProviderServices providerServices, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 184
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:18:18 Error] System.Data.Entity.Infrastructure.CommitFailedException: An error was reported while committing a database transaction but it could not be determined whether the transaction succeeded or failed on the database server. See the inner exception and http://go.microsoft.com/fwlink/?LinkId=313468 for more information. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Data.SQLite.SQLiteTransaction.IsValid(Boolean throwError)
+   at System.Data.SQLite.SQLiteTransaction.Commit()
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Commit()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\UnitOfWork.cs:line 25
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 170
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
+[2016/10/29 21:18:18 Error] System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntityEntryToDictionary(EntityEntry entry, EntityState state)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:18:18 Error] System.InvalidOperationException: Connection was closed, statement was terminated
+   at System.Data.SQLite.SQLiteDataReader.CheckClosed()
+   at System.Data.SQLite.SQLiteDataReader.get_FieldCount()
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataRecord.ReadMetadata(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader)
+   at System.Data.Entity.Core.Objects.Internal.ShapedBufferedDataRecord.Initialize(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataReader.Initialize(String providerManifestToken, DbProviderServices providerServices, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:18:18 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 180
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 67
+[2016/10/29 21:18:18 Error] System.InvalidOperationException: Connection was closed, statement was terminated
+   at System.Data.SQLite.SQLiteDataReader.CheckClosed()
+   at System.Data.SQLite.SQLiteDataReader.get_FieldCount()
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataRecord.ReadMetadata(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader)
+   at System.Data.Entity.Core.Objects.Internal.ShapedBufferedDataRecord.Initialize(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataReader.Initialize(String providerManifestToken, DbProviderServices providerServices, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:18:18 Error] System.InvalidOperationException: Connection was closed, statement was terminated
+   at System.Data.SQLite.SQLiteDataReader.CheckClosed()
+   at System.Data.SQLite.SQLiteDataReader.get_FieldCount()
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataRecord.ReadMetadata(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader)
+   at System.Data.Entity.Core.Objects.Internal.ShapedBufferedDataRecord.Initialize(String providerManifestToken, DbProviderServices providerServices, DbDataReader reader, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.BufferedDataReader.Initialize(String providerManifestToken, DbProviderServices providerServices, Type[] columnTypes, Boolean[] nullableColumns)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 113
+[2016/10/29 21:18:18 Error] System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: library routine called out of sequence
+null connection or database handle
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 154
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\Bank System\BankSystem\BankAPI\Controllers\AccountController.cs:line 90
