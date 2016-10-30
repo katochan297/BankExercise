@@ -94,14 +94,12 @@ namespace BankAPI.Tests
         [TestMethod]
         public void Test_Concurrency()
         {
-            for (int i = 0; i < 10; i++)
-            {
-                Task.Factory.StartNew(Test_Transfer);
-                Task.Factory.StartNew(Test_Deposit);
-                Task.Factory.StartNew(Test_Withdraw);
-            }
+            Test_Transfer();
+            Task.Run(() => Test_Transfer());
+            Test_Withdraw();
+            Task.Run(() => Test_Withdraw());
+            Test_Deposit();
         }
-
 
 
     }

@@ -11,3 +11,17 @@ C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\bin\Debug\EntityFramework.
 C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\bin\Debug\System.Data.SQLite.xml
 C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\obj\Debug\BankData.dll
 C:\Users\Kato\Desktop\Bank System\BankSystem\BankData\obj\Debug\BankData.pdb
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\BankData.dll.config
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\BankData.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\BankData.pdb
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\EntityFramework.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\System.Data.SQLite.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\EntityFramework.xml
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\System.Data.SQLite.xml
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\obj\Debug\BankData.csprojResolveAssemblyReference.cache
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\obj\Debug\BankData.dll
+C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\obj\Debug\BankData.pdb
