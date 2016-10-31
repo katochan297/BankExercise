@@ -65,7 +65,6 @@ namespace BankData.Repository
             }
             _dbSet.Remove(entity);
         }
-
-
+        
     }
 }

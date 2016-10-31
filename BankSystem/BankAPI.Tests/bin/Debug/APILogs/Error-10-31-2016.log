@@ -1,0 +1,392 @@
+[2016/10/31 14:38:37 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.CreateObjectQuery(Boolean asNoTracking, Boolean streaming)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.InitializeUnderlyingTypes(EntitySetTypePair pair)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 137
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 150
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 14:45:16 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BankData.Repository.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 40
+   at BankAPI.Controllers.AccountController.ValidateAccount(Account account, Decimal amount, TransactionType type, Account& acct) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 137
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 150
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 14:56:39 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 32
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 164
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 14:57:59 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 32
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 164
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 14:59:01 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 32
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 164
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 14:59:37 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 23
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 162
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 14:59:55 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 23
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 162
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 15:00:34 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 23
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 162
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 15:02:30 Error] System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at BankData.Repository.Repository`1.Update(T entity) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\Repository.cs:line 51
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 23
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 162
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 15:05:55 Error] System.Data.Entity.Infrastructure.CommitFailedException: An error was reported while committing a database transaction but it could not be determined whether the transaction succeeded or failed on the database server. See the inner exception and http://go.microsoft.com/fwlink/?LinkId=313468 for more information. ---> System.Data.Entity.Core.EntityException: The underlying provider failed on Commit. ---> System.Data.SQLite.SQLiteException: unknown error
+The connection was closed and re-opened, changes were already rolled back
+   at System.Data.SQLite.SQLiteTransaction.IsValid(Boolean throwError)
+   at System.Data.SQLite.SQLiteTransaction.Commit()
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Commit()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Commit()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\UnitOfWork.cs:line 29
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 166
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 15:05:57 Error] System.Data.Entity.Infrastructure.CommitFailedException: An error was reported while committing a database transaction but it could not be determined whether the transaction succeeded or failed on the database server. See the inner exception and http://go.microsoft.com/fwlink/?LinkId=313468 for more information. ---> System.Data.Entity.Core.EntityException: The underlying provider failed on Commit. ---> System.Data.SQLite.SQLiteException: unknown error
+No transaction is active on this connection
+   at System.Data.SQLite.SQLiteTransaction.IsValid(Boolean throwError)
+   at System.Data.SQLite.SQLiteTransaction.Commit()
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Commit()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityTransaction.Commit()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.UnitOfWork.Commit() in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\UnitOfWork.cs:line 29
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 166
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 16:52:48 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 34
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 163
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 18:50:10 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 34
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 163
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 18:50:40 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 24
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 160
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 18:51:10 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 24
+   at BankData.Repository.AccountRepository.FundTransfer(Account accFrom, Account accTo, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 42
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 190
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 63
+[2016/10/31 18:54:39 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 24
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 160
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 18:55:13 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 24
+   at BankData.Repository.AccountRepository.FundTransfer(Account accFrom, Account accTo, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 42
+   at BankAPI.Controllers.AccountController.ProcessTransfer(Account accountFrom, Account accountTo, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 190
+   at BankAPI.Controllers.AccountController.Transfer(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 63
+[2016/10/31 20:43:36 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 45
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 144
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109
+[2016/10/31 20:44:36 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Withdraw(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 29
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 141
+   at BankAPI.Controllers.AccountController.Withdraw(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 86
+[2016/10/31 20:45:06 Error] System.Data.Entity.Core.EntityException: An error occurred while starting a transaction on the provider connection. See the inner exception for details. ---> System.Data.SQLite.SQLiteException: database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at System.Data.SQLite.SQLiteTransaction..ctor(SQLiteConnection connection, Boolean deferredLock)
+   at System.Data.SQLite.SQLiteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<>c__DisplayClassd.<BeginDbTransaction>b__b()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   at System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BankData.Repository.AccountRepository.Deposit(Account account, Decimal amount) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\Repository\AccountRepository.cs:line 45
+   at BankAPI.Controllers.AccountController.Process(Account account, Decimal amount, TransactionType type) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 144
+   at BankAPI.Controllers.AccountController.Deposit(JObject data) in C:\Users\Kato\Desktop\BankExercise\BankSystem\BankAPI\Controllers\AccountController.cs:line 109

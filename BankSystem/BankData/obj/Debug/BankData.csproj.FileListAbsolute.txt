@@ -22,6 +22,5 @@ C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\System.Data.SQL
 C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\EntityFramework.xml
 C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\bin\Debug\System.Data.SQLite.xml
-C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\obj\Debug\BankData.csprojResolveAssemblyReference.cache
 C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\obj\Debug\BankData.dll
 C:\Users\Kato\Desktop\BankExercise\BankSystem\BankData\obj\Debug\BankData.pdb

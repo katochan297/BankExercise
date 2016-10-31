@@ -12,12 +12,13 @@ namespace BankData
     public class UnitOfWork : IUnitOfWork
     {
         private DbContext _context;
+
         public UnitOfWork()
         {
             _context = new BankContext();
             AccountRepository = new AccountRepository(_context);
         }
-
+        
         public IAccountRepository AccountRepository { get; private set; }
 
         public void Commit()

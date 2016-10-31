@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-using System.Web.Http.Results;
-using BankAPI.Helper;
+using BankData.Helper;
 using BankAPI.Models;
 using BankData;
-using BankData.Core;
 using Newtonsoft.Json.Linq;
 using NLog;
 
@@ -16,8 +14,8 @@ namespace BankAPI.Controllers
     public class AccountController : ApiController
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-      
-        //GET Insert data
+        
+        //GET data
         [HttpGet]
         [Route("GetAccounts")]
         public List<Account> GetAccounts()
@@ -29,6 +27,16 @@ namespace BankAPI.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetAccount")]
+        public Account GetAccount(int id)
+        {
+            using (var uow = new UnitOfWork())
+            {
+                var acct = uow.AccountRepository.SingleOrDefault(x => x.AccountID == id);
+                return acct;
+            }
+        }
 
         // POST api/account/Transfer
         [HttpPost]
@@ -120,69 +128,42 @@ namespace BankAPI.Controllers
             };
             return account;
         }
-
-        [NonAction]
-        private ResponseCode ValidateAccount(Account account, decimal amount, TransactionType type, out Account acct)
-        {
-            using (var uow = new UnitOfWork())
-            {
-                acct =
-                    uow.AccountRepository.SingleOrDefault(
-                        x => x.AccountID == account.AccountID && x.AccountNumber == account.AccountNumber);
-
-                var resp = Utilities.Validation(acct, amount, type);
-                return resp;
-            }
-        }
-
+        
         [NonAction]
         private ResponseCode Process(Account account, decimal amount, TransactionType type)
         {
-            //Validate account
-            var resp = ValidateAccount(account, amount, type, out account);
-            if (resp != ResponseCode.Validate)
-                return resp;
-
-            //processing
+            var resp = ResponseCode.Unknow;
             using (var uow = new UnitOfWork())
             {
                 switch (type)
                 {
                     case TransactionType.Withdraw:
-                        uow.AccountRepository.Withdraw(account, amount);
+                        resp = uow.AccountRepository.Withdraw(account, amount);
                         break;
                     case TransactionType.Deposit:
-                        uow.AccountRepository.Deposit(account, amount);
+                        resp = uow.AccountRepository.Deposit(account, amount);
                         break;
                 }
-                uow.Commit();
-
-                return ResponseCode.Success;
             }
+            return resp;
         }
 
         [NonAction]
         private ResponseCode ProcessTransfer(Account accountFrom, Account accountTo, decimal amount)
         {
             //Validate account
-            var respFrom = ValidateAccount(accountFrom, amount, TransactionType.Withdraw, out accountFrom);
-            if (respFrom != ResponseCode.Validate)
-                return respFrom;
-            
-            var respTo = ValidateAccount(accountTo, amount, TransactionType.Deposit, out accountTo);
-            if (respTo != ResponseCode.Validate)
-                return respTo;
+            if (accountFrom.AccountID == accountTo.AccountID || accountFrom.AccountNumber == accountTo.AccountNumber)
+                return ResponseCode.InvalidTransfer;
 
             //processing
+            ResponseCode resp;
             using (var uow = new UnitOfWork())
             {
-                uow.AccountRepository.FundTransfer(accountFrom, accountTo, amount);
-                uow.Commit();
-
-                return ResponseCode.Success;
+                resp = uow.AccountRepository.FundTransfer(accountFrom, accountTo, amount);
             }
+            return resp;
         }
-        
+
         #endregion
 
     }

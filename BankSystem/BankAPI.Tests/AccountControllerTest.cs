@@ -2,8 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Web.Http.Results;
 using BankAPI.Controllers;
-using BankAPI.Helper;
 using BankAPI.Models;
+using BankData.Helper;
 using Newtonsoft.Json.Linq;
 
 namespace BankAPI.Tests
@@ -11,21 +11,15 @@ namespace BankAPI.Tests
     [TestClass]
     public class AccountControllerTest
     {
-        private AccountController _acctController;
-
-        [TestInitialize]
-        public void Initialize()
-        {
-            _acctController = new AccountController();
-        }
-
+        
         [TestMethod]
         public void Test_GetAccounts()
         {
             //Arrange
+            var acctController = new AccountController();
 
             //Act
-            var result = _acctController.GetAccounts();
+            var result = acctController.GetAccounts();
 
             //Assert
             Assert.IsNotNull(result);
@@ -38,67 +32,88 @@ namespace BankAPI.Tests
         public void Test_Withdraw()
         {
             //Arrange
+            var acctController = new AccountController();
+            var acct = acctController.GetAccount(1);
+            var amt = 10;
             var obj = new JObject(
-                new JProperty("AccountID", "1"),
-                new JProperty("AccountNumber", "123456"),
-                new JProperty("Amount", "10")
+                new JProperty("AccountID", acct.AccountID),
+                new JProperty("AccountNumber", acct.AccountNumber),
+                new JProperty("Amount", amt)
             );
-
+            
             //Act
-            var result = _acctController.Withdraw(obj) as JsonResult<ResponseModel>;
+            var result = acctController.Withdraw(obj) as JsonResult<ResponseModel>;
+            var acct2 = acctController.GetAccount(1);
             
             //Assert
             Assert.IsNotNull(result);
             Assert.AreEqual(ResponseCode.Success, result.Content.Status);
+            Assert.AreEqual(acct2.Balance, acct.Balance - amt);
         }
 
         [TestMethod]
         public void Test_Deposit()
         {
             //Arrange
+            var acctController = new AccountController();
+            var acct = acctController.GetAccount(1);
+            var amt = 10;
             var obj = new JObject(
-                new JProperty("AccountID", "1"),
-                new JProperty("AccountNumber", "123456"),
-                new JProperty("Amount", "10")
+                new JProperty("AccountID", acct.AccountID),
+                new JProperty("AccountNumber", acct.AccountNumber),
+                new JProperty("Amount", amt)
             );
 
             //Act
-            var result = _acctController.Deposit(obj) as JsonResult<ResponseModel>;
+            var result = acctController.Deposit(obj) as JsonResult<ResponseModel>;
+            var acct2 = acctController.GetAccount(1);
 
             //Assert
             Assert.IsNotNull(result);
             Assert.AreEqual(ResponseCode.Success, result.Content.Status);
+            Assert.AreEqual(acct2.Balance, acct.Balance + amt);
         }
 
         [TestMethod]
         public void Test_Transfer()
         {
             //Arrange
+            var acctController = new AccountController();
+            var acctFrom = acctController.GetAccount(1);
+            var acctTo = acctController.GetAccount(2);
+            var amt = 10;
             var obj = new JObject(
-                new JProperty("AccountID_From", "1"),
-                new JProperty("AccountNumber_From", "123456"),
-                new JProperty("AccountID_To", "2"),
-                new JProperty("AccountNumber_To", "987654"),
-                new JProperty("Amount", "10")
+                new JProperty("AccountID_From", acctFrom.AccountID),
+                new JProperty("AccountNumber_From", acctFrom.AccountNumber),
+                new JProperty("AccountID_To", acctTo.AccountID),
+                new JProperty("AccountNumber_To", acctTo.AccountNumber),
+                new JProperty("Amount", amt)
             );
 
             //Act
-            var result = _acctController.Transfer(obj) as JsonResult<ResponseModel>;
+            var result = acctController.Transfer(obj) as JsonResult<ResponseModel>;
+            var acctFrom2 = acctController.GetAccount(1);
+            var acctTo2 = acctController.GetAccount(2);
 
             //Assert
             Assert.IsNotNull(result);
             Assert.AreEqual(ResponseCode.Success, result.Content.Status);
+            Assert.AreEqual(acctFrom2.Balance, acctFrom.Balance - amt);
+            Assert.AreEqual(acctTo2.Balance, acctTo.Balance + amt);
         }
 
 
         [TestMethod]
-        public void Test_Concurrency()
+        public async Task Test_Concurrency()
         {
-            Test_Transfer();
-            Task.Run(() => Test_Transfer());
-            Test_Withdraw();
-            Task.Run(() => Test_Withdraw());
-            Test_Deposit();
+            await Task.Run(
+                () =>
+                {
+                    Task.Run(() => Test_Withdraw());
+                    Task.Run(() => Test_Deposit());
+                    Test_Transfer();
+                }
+            );
         }
 
 
